@@ -26,21 +26,20 @@ function play ()
 
       msg1.textContent = "Your Guess is Too low!"
       msg1.classList.remove( "success" )
-      // document.getElementById( "message3" ).innerHTML = text;
+     
     }
     
     else if ( user_guess > answer)
     {
       msg1.textContent = "Your Guess is Too High!"
       msg1.classList.remove( "success" )
-      // document.getElementById( "message3" ).innerHTML = text;
+      
     }
     else if ( user_guess == answer )
     {
       msg1.textContent = "Awesome job, You got it!"
       msg1.classList.add( "success" )
-      // msg2.textContent = "The Number was " + answer
-      // msg3.textContent = " You guessed it in " + no_of_guesses + " Guesses";
+      
     }
   }
 }
