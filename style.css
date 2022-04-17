@@ -1,0 +1,69 @@
+.title {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 0%;
+    background-color: #333;
+  }
+  
+  body {
+    margin: 0%;
+  }
+  
+  button {
+    padding: 10px;
+  }
+  
+  .container {
+    padding-left: 40%;
+    padding-right: 45%;
+  
+  }
+  
+  input {
+    width: 30%;
+    height: 40px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solig lightgray;
+  }
+  
+  input:focus {
+    border: 3px solid lightblue !important;
+  }
+  
+  h1 {
+    color: #FFDF00;
+    font-size: 10vh !important;
+    font-family:sans-serif;
+    
+  }
+  
+  #message1 {
+    background-color: #f6c7a8;
+    color: rgb(88, 14, 14);
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .message {
+    width: 30%;
+    margin: 10px auto;
+  }
+  
+  .guess-message {
+    margin: 0 !important;
+    border: 1px solid lightgray !important;
+    text-align: center;
+    padding: 4px;
+  }
+  
+  .success {
+    background-color: lightblue !important;
+    color: green !important;
+  }
+  button:hover{
+      border: 1px solid black !important;
+      background-color: #333 !important;
+  }
