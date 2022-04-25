@@ -14,37 +14,41 @@ function play ()
   {
     guesses_num.push( user_guess );
     node = null;
-   
+
     for ( let i = 0; i < guesses_num.length; i++ )
     {
       node = document.getElementById( "message3" ).innerHTML + ( "<div class='guess-message'> You guessed " + guesses_num[ i ] + "<div>" );
     }
     document.getElementById( "message3" ).innerHTML = node
-    
-    if ( user_guess < answer)
+
+    if ( user_guess < answer )
     {
 
       msg1.textContent = "Your Guess is Too low!"
       msg1.classList.remove( "success" )
-     
+
     }
-    
-    else if ( user_guess > answer)
+
+    else if ( user_guess > answer )
     {
       msg1.textContent = "Your Guess is Too High!"
       msg1.classList.remove( "success" )
-      
+
     }
     else if ( user_guess == answer )
     {
       msg1.textContent = "Awesome job, You got it!"
       msg1.classList.add( "success" )
-      
+
     }
   }
 }
 
 function reset ()
 {
-  location.reload();
+  guesses_num = [];
+  document.getElementById( "message3" ).innerHTML = null;
+  msg1.innerHTML = null;
+  document.getElementById( "guess" ).value = null;
 }
+
